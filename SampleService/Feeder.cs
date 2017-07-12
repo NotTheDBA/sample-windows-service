@@ -7,6 +7,7 @@ using System.Linq;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
+using APISample;
 
 namespace SampleService
 {
@@ -47,8 +48,8 @@ namespace SampleService
         /// <param name="args"></param>
         public void OnTimer(object sender, System.Timers.ElapsedEventArgs args)
         {
-            //Put the code you want to fire every interval here.  This code needs to be able to run in multiple parallel threads.          
-            System.Console.WriteLine("Sample Event Feeder service is has processed a timed event.");
+            //Put the code you want to fire every interval here.  This code needs to be able to run in multiple parallel threads. 
+            APISample.SampleWrapper.DoSomething("Sample Event Feeder service was called.", "It has processed a timed event.");
         }
     }
 }
