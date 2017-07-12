@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Diagnostics;
 //using System.Timers;
 using APISample;
+using Common;
 
 namespace TestConsole
 {
@@ -19,14 +21,17 @@ namespace TestConsole
 
         static void OnStart(string[] args)
         {
-            //If you need to initialize any variables when timer starts, put it here.          
-            System.Console.WriteLine("Sample Event Feeder service is starting.");
+            //If you need to initialize any variables when timer starts, put it here.
+
+            //TODO:  Register the Assembly name; this value will need to be set up in the registry by the service installer for it to work.
+            Common.Logging.WriteEvent(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name, "Sample Event Feeder service is starting.", EventLogEntryType.Information);
         }
 
         static void OnStop()
         {
             //If you need to clean up any objects when the thread ends, put it here.          
-            System.Console.WriteLine("Sample Event Feeder service is stopping.");
+            //System.Console.WriteLine("Sample Event Feeder service is stopping.");
+            Common.Logging.WriteEvent(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name, "Sample Event Feeder service is stopping.", EventLogEntryType.Information);
         }
 
         /// <summary>
