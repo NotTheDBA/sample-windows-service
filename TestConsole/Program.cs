@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Data;
 using System.Diagnostics;
-//using System.Timers;
 using APISample;
 using Common;
 using SampleService;
@@ -46,7 +45,7 @@ namespace TestConsole
         public static void OnTimer()  //Note that we are not supporting the default Timer paramemeters.  That is beyond the scope.
         {
             //Put the code you want to fire every interval here.  This code needs to be able to run in multiple parallel threads. 
-            APISample.SampleWrapper.DoSomething("Sample Event Feeder service was called.", "It has processed a timed event.");
+            APISample.SampleWrapper.DoSomething("Sample Event Feeder test was called.", "It has processed an OnTimer event.");
 
             //The TestFeeder class only pulls test events.
             SampleService.DataFactory df = new DataFactory();
