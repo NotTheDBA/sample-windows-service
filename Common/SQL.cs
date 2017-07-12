@@ -6,7 +6,7 @@ namespace Common
 {    /// <summary>
      /// The SQL class manages connections and calls to SQL database procedures.   Other than the connection string, no code should be changed in this class. 
      /// </summary>
-    class SQL : IDisposable
+    public class SQL : IDisposable
     {
         // Development
         //TODO:  Set the data string
