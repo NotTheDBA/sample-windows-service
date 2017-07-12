@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{E9FCE1C8-A320-458E-8327-0AD31256518B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SammpleService</RootNamespace>
-    <AssemblyName>SammpleService</AssemblyName>
+    <RootNamespace>SampleService</RootNamespace>
+    <AssemblyName>SampleService</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataFactory.cs" />
     <Compile Include="Feeder.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -59,6 +60,10 @@
     <ProjectReference Include="..\APISample\APISample.csproj">
       <Project>{549f0b75-6fa4-4769-b93b-d85e65f932f2}</Project>
       <Name>APISample</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{3332319b-44a0-4c79-8843-3b8b27a27b36}</Project>
+      <Name>Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
