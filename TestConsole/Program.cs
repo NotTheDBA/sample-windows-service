@@ -1,5 +1,6 @@
 ﻿using System;
 //using System.Timers;
+using APISample;
 
 namespace TestConsole
 {
@@ -36,8 +37,8 @@ namespace TestConsole
         //public static void OnTimer(object sender, System.Timers.ElapsedEventArgs args)
         public static void OnTimer()  //Note that we are not supporting the default Timer paramemeters.  That is beyond the scope.
         {
-            //Put the code you want to fire every interval here.  This code needs to be able to run in multiple parallel threads.          
-            System.Console.WriteLine("Sample Event Feeder service is has processed a timed event.");
+            //Put the code you want to fire every interval here.  This code needs to be able to run in multiple parallel threads. 
+            APISample.SampleWrapper.DoSomething("Sample Event Feeder service was called.", "It has processed a timed event.");
         }
 
     }
