@@ -10,14 +10,14 @@ namespace SampleService
     static class Program
     {
         /// <summary>
-        /// The main entry point for the application.
+        /// The main entry point for the application.  Do not change this code.
         /// </summary>
         static void Main()
         {
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new Service1()
+                new Feeder()
             };
             ServiceBase.Run(ServicesToRun);
         }

@@ -1,6 +1,6 @@
 ﻿namespace SampleService
 {
-    partial class Service1
+    partial class Feeder
     {
         /// <summary> 
         /// Required designer variable.

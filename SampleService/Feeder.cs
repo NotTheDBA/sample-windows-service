@@ -10,9 +10,12 @@ using System.Threading.Tasks;
 
 namespace SampleService
 {
-    public partial class Service1 : ServiceBase
+    /// <summary>
+    /// The Feeder class is the Windows service core of the project code.
+    /// </summary>
+    public partial class Feeder : ServiceBase
     {
-        public Service1()
+        public Feeder()
         {
             InitializeComponent();
         }

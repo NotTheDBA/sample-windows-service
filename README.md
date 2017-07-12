@@ -6,3 +6,6 @@ party service.
 
 The code is non-functional, but was desinged to be quickly converted to a functional implementation with
 minimal effort.
+
+This project depends on the Microsoft Visual Studio 2017 Installer Projects plugin.  
+https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects
