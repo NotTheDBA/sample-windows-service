@@ -24,3 +24,6 @@ provided below
 		Note that for any other "inaccessible" logs, you'll also need to grant read access, as  permissions have been set to 
 		not inherity from the parent key.
 	6)	Cause the code line that creates the event source to be executed (EventLog.CreateEventSource())
+
+For details on how to create and use a service installer package, please see:
+https://docs.microsoft.com/en-us/dotnet/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer
