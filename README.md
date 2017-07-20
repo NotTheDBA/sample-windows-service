@@ -25,5 +25,5 @@ provided below
 		not inherity from the parent key.
 	6)	Cause the code line that creates the event source to be executed (EventLog.CreateEventSource())
 
-For details on how to create and use a service installer package, please see:
-https://docs.microsoft.com/en-us/dotnet/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer
+For details on how to create and use a service installer package, please see :
+https://www.youtube.com/watch?v=cp2aFNtcZfk
