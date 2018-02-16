@@ -1,6 +1,6 @@
 # sample-windows-service
 
-This is a project example I created in my previous roll to demonstrate the technique of having a windows service listener that 
+This is a project example I created in my previous role to demonstrate the technique of having a windows service listener that 
 polls a database for queued transaction records, then uploads the transaction data to a web API of a third-party service.
 
 The code is non-functional, but based on a real-world project.  The template was desinged to be quickly converted to a functional implementation with
